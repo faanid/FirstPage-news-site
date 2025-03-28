@@ -2,13 +2,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-
-      /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -16,7 +9,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <script src="https://use.fontawesome.com/9d619eb1de.js"></script> -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Second</title>
   </head>
@@ -26,9 +18,10 @@
       <header>
         <nav class="header">
           <img src="images/logo-black.png" alt="" class="header-logo" />
-          <button class="header-menu-burger" onclick="showMenu()">
+          <button type="button" class="header-menu-burger" onclick="showMenu()" aria-label="Open menu">
             <i class="fas fa-bars"></i>
           </button>
+
           <ul class="header-menu" id="menu">
             <li class="header-menu-item">
               <a href="#" class="header-menu-item-link">NEWS</a>
@@ -377,7 +370,7 @@
                   class="subscribe-form-text"
                   placeholder="Your email"
                 />
-                <button>b</button>
+                <button type="button">b</button>
                 <section class="clear-fix"></section>
               </form>
             </section>
@@ -401,7 +394,8 @@
             <p class="footer-p footer-p-padding-20px">
               Copyright ©2019 All rights reserved | This template is made with
               <i class="icon-heart" aria-hidden="true"></i> by
-              <a href="https://colorlib.com" target="_blank"> Colorlib</a>
+              <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">Colorlib</a>
+
             </p>
           </section>
 
@@ -446,12 +440,29 @@
 
           <section class="clear-fix"></section>
 
-          <ul class="footer-social-network">
-            <li><a href="#"><i class="fab fa-facebook"></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></a></li>
-            <li><a href="#"><i class="fab fa-google-plus-g"></a></li>
-           <li><a href="#"><i class="fab fa-bitcoin"></a></li>
+        <ul class="footer-social-network">
+          <li>
+    <a href="#" aria-label="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+          </li>
+          <li>
+              <a href="#" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>          
+    <a href="#" aria-label="Google Plus">
+      <i class="fab fa-google-plus-g"></i>
+    </a>
+            </li>
+            <li>          
+    <a href="#" aria-label="Bitcoin">
+      <i class="fab fa-bitcoin"></i>
+    </a>
+            </li>
           </ul>
+
           
           <section class="clear-fix"></section>
 
